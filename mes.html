@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/vendor/charts/chartist-bundle/chartist.css">
+    <link rel="stylesheet" href="assets/vendor/charts/morris-bundle/morris.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/datepicker.css" <title>Diario de Trade</title>
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+        <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+        <div id="header"></div>
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- left sidebar -->
+        <!-- ============================================================== -->
+        <div id="left"></div>
+        <!-- ============================================================== -->
+        <!-- end left sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- wrapper  -->
+        <!-- ============================================================== -->
+        <div class="dashboard-wrapper">
+            <div class="dashboard-ecommerce">
+                <div class="container-fluid dashboard-content ">
+                    <!-- ============================================================== -->
+                    <!-- pageheader  -->
+                    <!-- ============================================================== -->
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header">
+                                <h2 class="pageheader-title">Informações sobre o mês </h2>
+                                <p class="pageheader-text"></p>
+                                <div class="page-breadcrumb">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="index.html"
+                                                    class="breadcrumb-link">Dashboard</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Dados</li>
+                                            <li class="breadcrumb-item active" aria-current="page">Mês</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- end pageheader  -->
+                    <!-- ============================================================== -->
+                    <!-- datepickers  -->
+                    <!-- ============================================================== -->
+                    <div class="ecommerce-widget">
+                        <div class="row ml-auto">
+                            <h3 class="h5 text-dark">Escolha o mês</h3>
+                            <div class="w-100">
+                                <form action="" method="post" class="datepickers">
+                                    <div class="form-group">
+                                        <input type="text"  class="border-2 border-primary rounded" readonly="readonly" name="date" id="datepicker"  required>
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <button type="submit" class="btn btn-primary rounded btn-sm">Procurar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end Datepicker  -->
+                        <!-- ============================================================== -->
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div class="card">
+                                    <h5 class="card-header">Mês de -------</h5>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Positivo:</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Negativo:</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Valor Líquido:</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Dias Operados:</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Dias Positivos:</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Dias Negativos:</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Dias Zerados:</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Numero de Trades:</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Trades Positivos:</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Trades Empatados:</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Trades Negativos:</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                <div>
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- footer -->
+                <div class="footer" id="footer">
+                </div>
+                <!-- end footer -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- end wrapper  -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- end main wrapper  -->
+        <!-- ============================================================== -->
+        <!-- Optional JavaScript -->
+        <script src="assets/libs/js/dashboard-ecommerce.js"></script>
+
+        <!-- jquery 3.3.1 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+        <script src="documentation/js/jquery-3.1.0.min.js"></script>
+
+        <!-- bootstap bundle js -->
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+        <!-- slimscroll js -->
+        <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+
+        <!-- chart chartist js -->
+        <script src="assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+
+        <!-- sparkline js -->
+        <script src="assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+
+        <!-- morris js -->
+        <script src="assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+        <script src="assets/vendor/charts/morris-bundle/morris.js"></script>
+
+        <!--Charts.js-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/graficoAno.js"></script>
+
+        <!-- main js -->
+        <script src="js/main.js"></script>
+        <script src="assets/libs/js/main-js.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+
+
+</body>
+
+</html>
