@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/vendor/charts/chartist-bundle/chartist.css">
     <link rel="stylesheet" href="assets/vendor/charts/morris-bundle/morris.css">
     <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="js/c3charts/c3.css">
+    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
     <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
     <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="css/datepicker.css">
@@ -51,7 +51,7 @@
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="page-header">
-                                <h2 class="pageheader-title">Informações sobre o mês </h2>
+                                <h2 class="pageheader-title">Informações sobre o ano </h2>
                                 <p class="pageheader-text"></p>
                                 <div class="page-breadcrumb">
                                     <nav aria-label="breadcrumb">
@@ -59,7 +59,7 @@
                                             <li class="breadcrumb-item"><a href="index.html"
                                                     class="breadcrumb-link">Dashboard</a></li>
                                             <li class="breadcrumb-item active" aria-current="page">Dados</li>
-                                            <li class="breadcrumb-item active" aria-current="page">Mês</li>
+                                            <li class="breadcrumb-item active" aria-current="page">Ano</li>
                                         </ol>
                                     </nav>
                                 </div>
@@ -73,11 +73,11 @@
                     <!-- ============================================================== -->
                     <div class="ecommerce-widget">
                         <div class="row ml-auto">
-                            <h3 class="h5 text-dark">Escolha o mês</h3>
+                            <h3 class="h5 text-dark">Escolha o Ano</h3>
                             <div class="w-100">
                                 <form action="" method="post" class="datepickers">
                                     <div class="form-group">
-                                        <input type="text"  class="border-2 border-primary rounded" readonly="readonly" name="date" id="datepicker"  required>
+                                        <input type="text"  class="border-2 border-primary rounded" readonly="readonly" name="date" id="datepicker2"  required>
                                     </div>
                                     <div class="form-group">
                                         <div>
@@ -93,7 +93,7 @@
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                                 <div class="card">
-                                    <h5 class="card-header">Mês de -------</h5>
+                                    <h5 class="card-header">Ano de -------</h5>
                                     <div class="card-body">
                                         <div class="table-responsive">
                                             <table class="table table-bordered table-hover table-striped">
@@ -151,11 +151,8 @@
                         </div>
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                                <div class="card">
-                                    <h5 class="card-header">Pie Chart </h5>
-                                    <div class="card-body">
-                                        <div id="c3chart_pie"></div>
-                                    </div>
+                                <div>
+                                    <canvas id="myChart"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -202,9 +199,6 @@
         <!--Charts.js-->
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="js/graficoAno.js"></script>
-        <script src="js/c3charts/c3.min.js"></script>
-        <script src="js/c3charts/C3chartjs.js"></script>
-        <script src="js/c3charts/d3-5.4.0.min.js"></script>
 
         <!-- main js -->
         <script src="js/main.js"></script>

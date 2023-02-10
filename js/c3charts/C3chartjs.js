@@ -267,19 +267,27 @@
             });
         }
 
+
+
         if ($('#c3chart_pie').length) {
+            var positivo = 20
+            var negativo = 30
+            var empate = 50
             var chart = c3.generate({
                 bindto: "#c3chart_pie",
                 data: {
                     columns: [
-                        ['data1', 30],
-                        ['data2', 50]
+                        ['Positivo', positivo],
+                        ['Negativo', negativo],
+                        ['Empate', empate],
+
                     ],
                     type: 'pie',
 
                     colors: {
                          data1: '#5969ff',
-                        data2: '#ff407b'
+                        data2: '#ff407b',
+                        data3: '#1ba3b9'
 
 
                     }
@@ -287,7 +295,7 @@
                 pie: {
                     label: {
                         format: function(value, ratio, id) {
-                            return d3.format('$')(value);
+                            return d3.format(value);
                         }
                     }
                 }

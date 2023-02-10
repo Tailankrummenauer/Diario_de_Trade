@@ -88,10 +88,27 @@ $(document).ready(() => {
         startView: "months", 
         minViewMode: "months",
         viewMode: 'months',
+        dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'],
+        dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+        dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+        monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+        monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
     
     });
 })
 
+
+//date picker de ano
+
+$(document).ready(() => {
+    $("#datepicker2").datepicker( {
+        format: " yyyy",
+        startView: "years", 
+        minViewMode: "years",
+        viewMode: 'years',
+    
+    });
+})
 
 //Não deixar data avançar no calendario
 
