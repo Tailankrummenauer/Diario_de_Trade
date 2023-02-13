@@ -414,8 +414,8 @@ address {}
 }
 
 .custom-radio .custom-control-input:checked~.custom-control-label::before {
-    background-color: #5969ff;
-    border-color: #5969ff;
+    background-color: #000000;
+    border-color: #000000;
 }
 
 .custom-control-input:disabled~.custom-control-label::before {
